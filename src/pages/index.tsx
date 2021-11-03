@@ -1,7 +1,5 @@
-import React from "react"
-
-const LandingPage = () => {
-  return <div>Hello world!</div>
+const IndexPage = () => {
+  return <div>Hello world! Edword!</div>
 }
 
-export default LandingPage
+export default IndexPage
