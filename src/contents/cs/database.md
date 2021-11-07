@@ -164,6 +164,8 @@ tags: ["CS", "면접"]
 <p>
 
 - Lock을 사용하여 쓰레드를 직렬화 (Lock을 가진 트랜잭션이 동작을 수행)
+- 
+- 스냅샷
 
 </p>
 </details>
@@ -178,15 +180,15 @@ tags: ["CS", "면접"]
 
 <br>
 
-`READ UNCOMMITTED`
+- `READ UNCOMMITTED`
   - 한 트랜잭션에서 커밋하지 않은 데이타에 다른 트랜잭션이 접근 
   - Dirty Read, Non-Repeatable Read, Phantom Read
-`READ COMMITTED`
+- `READ COMMITTED`
   - 커밋이 완료된 데이타만 읽을 수 있다.
   - Non-Repeatable Read, Phantom Read
-`REPEATABLE READ`
+- `REPEATABLE READ`
   - Phantom Read
-`SERIALIZABLE`
+- `SERIALIZABLE`
   -  INSERT 문제
 
 <br>
@@ -198,6 +200,13 @@ tags: ["CS", "면접"]
   - T1에서 Read할 때 T2에서 변경하면 T1은 변경된 데이터를 읽게 된다.
 - Phantom Read
 
+<br>
+
+Lock
+- S Lock
+  - 쓰기 가능
+- X Lock
+  - 모두 차단
 
 - [참고](https://velog.io/@sa1341/트랜잭션-격리-수준Isolation-Level이란)
 
